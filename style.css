@@ -60,3 +60,27 @@ h1, h2, h3 {
     margin-bottom: 15px;
     color: #111111;
 }
+
+/* bloc des projets */
+
+.projet-card {
+    background-color: #fdfdfd;
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+/* avec le bloc pour la vidéo qui sera insérée dans le projet numéro 1 */
+
+.video-placeholder {
+    width: 100%;
+    height: 150px;
+    background-color: #eeeeee; /* j'ai mis gris pour montrer que la vidéo n'est
+    pas encore insérée */
+    margin-top: 15px;
+    text-align: center;
+    line-height: 150px;
+    color: #777777;
+    font-style: italic;
+}
