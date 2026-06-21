@@ -145,6 +145,54 @@ h1, h2, h3 {
 }
 .soft{ 
     background-color: #37474f; /* Un gris ardoise très haut de gamme pour le savoir-être */
+    background-color: #575b5e; /*je change la couleur pour du contraste */
     color: #ffffff; 
 }
 
+/* bloc du style de la section contact */
+.contact-conteneur {
+    font-family: roboto, Arial, Helvetica, sans-serif;
+    text-align: center;
+    max-width: 600px;
+    margin: 30px auto 0 auto;
+}
+
+.contact-conteneur p {
+    color: #555555;
+    margin-bottom: 25px;
+}
+
+.contact-boutons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* bloc du style des boutons de contact */
+.bouton-contact {
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+.bouton-contact.mail {
+    background-color: #1a237e;
+    color: #ffffff;
+}
+
+.bouton-contact.mail:hover {
+    background-color: #0d1342;
+}
+.bouton-contact.linkedin {
+    background-color: #575b5e;
+    color: #ffffff;
+}
+
+.bouton-contact.linkedin:hover {
+    background-color: #21272a;
+}
