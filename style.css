@@ -128,3 +128,13 @@ h1, h2, h3 {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
+/* bloc du style des boutons des compétences */
+.sf { 
+    background-color: #1a237e;
+    color: #ffffff; 
+}
+.soft{ 
+    background-color: #37474f; /* Un gris ardoise très haut de gamme pour le savoir-être */
+    color: #ffffff; 
+}
+
