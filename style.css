@@ -10,12 +10,13 @@ body {
     color: #2b4289;
     background-color: #b7d0e4;
     line-height: 1.6;
+    text-align: center;
 }
 
 /* bloc de la navigation du site */
 
 header {
-    background-color: #e0f1f4;      /* je reste dans l'idée du bleu */
+    background-color: #e0f1f4;/* je reste dans l'idée du bleu */
     padding: 15px;
     text-align: center;
     border-bottom: 2px solid #d8d3d3;
@@ -64,7 +65,7 @@ h1, h2, h3 {
 /* bloc des projets */
 
 .projet-card {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: roboto, Arial, Helvetica, sans-serif;
     background-color: #fdfdfd;
     border: 1px solid #e0e0e0;
     padding: 15px;
@@ -88,7 +89,7 @@ h1, h2, h3 {
 
 /* bloc du style des sous-titres */
 .sous-titre {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: roboto, Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
     color: #555555;
     margin-bottom: 15px;
