@@ -64,6 +64,13 @@ h1, h2, h3 {
 
 /* bloc des projets */
 
+.projets-grille {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 25px;
+}
+
 .projet-card {
     font-family: roboto, Arial, Helvetica, sans-serif;
     background-color: #fdfdfd;
@@ -71,6 +78,9 @@ h1, h2, h3 {
     padding: 15px;
     margin-top: 15px;
     border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
 }
 
 /* avec le bloc pour la vidéo qui sera insérée dans le projet numéro 1 */
