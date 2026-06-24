@@ -75,7 +75,7 @@ h1, h2, h3 {
     font-family: roboto, Arial, Helvetica, sans-serif;
     background-color: #fdfdfd;
     border: 1px solid #e0e0e0;
-    padding: 15px;
+    padding: 50px;
     margin-top: 15px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -194,4 +194,12 @@ h1, h2, h3 {
 
 .bouton-contact.linkedin:hover {
     background-color: #21272a;
+}
+
+/* bloc pour la video */
+.video-conteneur {
+    margin-top: auto;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
