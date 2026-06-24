@@ -201,3 +201,30 @@ h1, h2, h3 {
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
+
+/* bloc du style des mentions légales */
+.page-mentions {
+    background-color: #f8f9fa;
+    padding: 40px 20px;
+}
+
+.conteneur-mentions {
+    max-width: 700px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.bouton-retour {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #1a237e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.bouton-retour:hover {
+    text-decoration: underline;
+}
