@@ -228,3 +228,63 @@ h1, h2, h3 {
 .bouton-retour:hover {
     text-decoration: underline;
 }
+
+/* bloc du style du bouton du dark mode */
+#toggle-darkmode {
+    margin-left: 15px;
+    background: none;
+    border: 1px solid #1a237e;
+    color: #1a237e;
+    padding: 6px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+#toggle-darkmode:hover {
+    background-color: #1a237e;
+    color: #ffffff;
+}
+
+/* ça c'est le bloc pour adapter le bouton lui-même quand le mode sombre est actif */
+body.dark-mode #toggle-darkmode {
+    border-color: #9fa8da;
+    color: #9fa8da;
+}
+
+body.dark-mode #toggle-darkmode:hover {
+    background-color: #9fa8da;
+    color: #121212;
+}
+
+/* bloc de toute la partie javascript mode sombre */
+
+/* ça c'est quand le dark-mode est activée sur le body */
+body.dark-mode {
+    background-color: #121212;
+    color: #f5f5f5;
+}
+
+/* ça c'est pour les cartes de projet quand elles seront en mode sombre */
+body.dark-mode .projet-card, 
+body.dark-mode .conteneur-mentions {
+    background-color: #1e1e1e;
+    color: #f5f5f5;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+}
+
+/* ça se sont les liens et boutons en mode sombre */
+body.dark-mode a, 
+body.dark-mode .lien-mentions,
+body.dark-mode .bouton-retour {
+    color: #9fa8da;
+}
+
+/* pour le deader aussi */
+body.dark-mode header, 
+body.dark-mode footer {
+    border-color: #333333;
+}
