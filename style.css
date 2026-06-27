@@ -249,42 +249,69 @@ h1, h2, h3 {
     color: #ffffff;
 }
 
-/* ça c'est le bloc pour adapter le bouton lui-même quand le mode sombre est actif */
+/* ça c'est le bloc pour adapter le bouton lui-même quand le mode sombre est actif, il
+y a eu une correction sur ce bloc fait avec l'IA de Gemini car au premier essai du mode sombre
+cela n'était pas concluant, donc pour aller plus vite, je me suis aidée */
+
+/* 1. Le fond global du site et le texte général */
+body.dark-mode {
+    background-color: #121212 !important; /* Fond noir profond */
+    color: #f5f5f5 !important; /* Texte blanc cassé très lisible */
+}
+
+/* 2. Correction de la barre de navigation (Header) */
+body.dark-mode header, 
+body.dark-mode nav,
+body.dark-mode .your-header-class-if-any { 
+    background-color: #1a1a1a !important; /* Un gris très sombre pour le menu */
+    color: #f5f5f5 !important;
+    border-bottom: 1px solid #333333 !important;
+}
+
+/* 3. Correction des liens du menu en mode sombre */
+body.dark-mode nav a, 
+body.dark-mode header a {
+    color: #ffffff !important;
+}
+
+/* 4. Correction des cartes blanches (Présentation, Compétences...) */
+body.dark-mode .presentation-card, 
+body.dark-mode .competences-card,
+body.dark-mode .projet-card,
+body.dark-mode main > div { /* Cible tes blocs de section */
+    background-color: #1e1e1e !important; /* Gris anthracite pour les cartes */
+    color: #ffffff !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* 5. Correction du bouton Mode Sombre lui-même */
 body.dark-mode #toggle-darkmode {
-    border-color: #9fa8da;
-    color: #9fa8da;
+    border-color: #ffffff !important;
+    color: #ffffff !important;
+    background-color: transparent !important;
 }
 
 body.dark-mode #toggle-darkmode:hover {
-    background-color: #9fa8da;
-    color: #121212;
+    background-color: #ffffff !important;
+    color: #121212 !important;
 }
 
-/* bloc de toute la partie javascript mode sombre */
+/* ==========================================
+   FORCE L'ADAPTATION DES BLOCS PROJETS AU MODE SOMBRE
+   ========================================== */
 
-/* ça c'est quand le dark-mode est activée sur le body */
-body.dark-mode {
-    background-color: #121212;
-    color: #f5f5f5;
+/* 1. Force la couleur de fond des cartes projets (Premier et deuxième projet) */
+body.dark-mode .premier-projet-block, 
+body.dark-mode .deuxieme-projet-block,
+body.dark-mode .projet-card { /* Ciblez la classe générique si vous en avez une */
+    background-color: #1e1e1e !important; /* Gris anthracite pour les cartes projets */
+    border: 1px solid #333333 !important; /* Ajoute une bordure subtile */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5) !important; /* Ombre plus sombre */
 }
 
-/* ça c'est pour les cartes de projet quand elles seront en mode sombre */
-body.dark-mode .projet-card, 
-body.dark-mode .conteneur-mentions {
-    background-color: #1e1e1e;
-    color: #f5f5f5;
-    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
-}
-
-/* ça se sont les liens et boutons en mode sombre */
-body.dark-mode a, 
-body.dark-mode .lien-mentions,
-body.dark-mode .bouton-retour {
-    color: #9fa8da;
-}
-
-/* pour le deader aussi */
-body.dark-mode header, 
-body.dark-mode footer {
-    border-color: #333333;
+/* 2. Force la couleur du texte à l'intérieur des cartes projets */
+body.dark-mode .premier-projet-block *, 
+body.dark-mode .deuxieme-projet-block *,
+body.dark-mode .projet-card * { /* L'étoile (*) cible TOUT le texte à l'intérieur */
+    color: #ffffff !important; /* Texte blanc pur pour un contraste maximal */
 }
