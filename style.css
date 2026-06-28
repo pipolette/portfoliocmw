@@ -316,3 +316,21 @@ body.dark-mode .deuxieme-projet-block *,
 body.dark-mode .projet-card * { /* L'étoile (*) cible TOUT le texte à l'intérieur */
     color: #ffffff !important; /* Texte blanc pur pour un contraste maximal */
 }
+
+/* bloc du mode sombre des mentions légales */
+body.dark-mode .conteneur-mentions {
+    background-color: #1e1e1e !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5) !important;
+}
+
+body.dark-mode .conteneur-mentions h1,
+body.dark-mode .conteneur-mentions h3,
+body.dark-mode .conteneur-mentions p,
+body.dark-mode .conteneur-mentions strong {
+    color: #ffffff !important;
+}
+
+body.dark-mode .bouton-retour {
+    color: #9fa8da !important;
+}
