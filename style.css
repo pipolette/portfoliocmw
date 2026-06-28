@@ -1,3 +1,7 @@
+/* avant de vous remettre ce travail, je tiens à préciser que ce code
+est peut-être assez basique comme mon site mais il est en adéquation 
+avec le niveau de mes compétences en HTML, CSS et Javascript. */
+
 /* bloc avec les paramètres de base pour le portefolio */
 * {
     margin: 0;
@@ -65,7 +69,6 @@ h1, h2, h3 {
 h2 {
     text-decoration: underline;
 }
-
 /* bloc des projets */
 
 .projets-grille {
