@@ -62,6 +62,10 @@ h1, h2, h3 {
     color: #111111;
 }
 
+h2 {
+    text-decoration: underline;
+}
+
 /* bloc des projets */
 
 .projets-grille {
@@ -251,7 +255,8 @@ h1, h2, h3 {
 
 /* ça c'est le bloc pour adapter le bouton lui-même quand le mode sombre est actif, il
 y a eu une correction sur ce bloc fait avec l'IA de Gemini car au premier essai du mode sombre
-cela n'était pas concluant, donc pour aller plus vite, je me suis aidée */
+cela n'était pas concluant, donc pour aller plus vite, je me suis aidée je le laisse tel quel
+sur cette partie */
 
 /* 1. Le fond global du site et le texte général */
 body.dark-mode {
@@ -263,7 +268,7 @@ body.dark-mode {
 body.dark-mode header, 
 body.dark-mode nav,
 body.dark-mode .your-header-class-if-any { 
-    background-color: #1a1a1a !important; /* Un gris très sombre pour le menu */
+    background-color: #1a1a1a !important;
     color: #f5f5f5 !important;
     border-bottom: 1px solid #333333 !important;
 }
@@ -295,10 +300,6 @@ body.dark-mode #toggle-darkmode:hover {
     background-color: #ffffff !important;
     color: #121212 !important;
 }
-
-/* ==========================================
-   FORCE L'ADAPTATION DES BLOCS PROJETS AU MODE SOMBRE
-   ========================================== */
 
 /* 1. Force la couleur de fond des cartes projets (Premier et deuxième projet) */
 body.dark-mode .premier-projet-block, 
